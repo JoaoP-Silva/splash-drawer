@@ -6,7 +6,7 @@ output_dir = "data/splash_arts"
 os.makedirs(output_dir, exist_ok=True)
 
 # New size
-target_size = (1536, 1024)
+target_size = (256, 256)
 
 def resize_image(image_path, save_path):
     image = cv2.imread(image_path)
