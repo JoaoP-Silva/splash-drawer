@@ -20,11 +20,11 @@ In this project, the pix2pix model was trained to generate splash art images of 
 The _scripts_ folder contains a colletion of useful methods to help with the setup of the project. Every script in the folder must be called from the root DIR.
 
 ```python 
-python3 scripts/scrapper.py
+python3 scripts/scrapper.py #example
 ```
 The model was trained with 78 splash art images from the [WestStudio website](https://www.weststudio.com/project/league-of-legends-splash-art). To uncompress the database, call ```sh scripts/unzip_data.sh```. 
 
 The images were downloaded from the web using [scripts/scrapper.py](https://github.com/JoaoP-Silva/splash-drawer/blob/main/scripts/scrapper.py). To make the training easier, all images were resized to 256x256px using [scripts/resize.py](https://github.com/JoaoP-Silva/splash-drawer/blob/main/scripts/resize.py). Sketches were obtained using the OpenGL lib in [scripts/gen_scketches.py](https://github.com/JoaoP-Silva/splash-drawer/blob/main/scripts/gen_sketches.py).
 
 # Train the model
-The model training code is in the jupyter notebook [splash_drawer.ipynb](https://github.com/JoaoP-Silva/splash-drawer/blob/main/splash_drawer.ipynb). The code was entirely based on (Jason Browlee's)[https://machinelearningmastery.com/how-to-develop-a-pix2pix-gan-for-image-to-image-translation/] amazing blog article.
+The model training code is in the jupyter notebook [splash_drawer.ipynb](https://github.com/JoaoP-Silva/splash-drawer/blob/main/splash_drawer.ipynb). The code was entirely based on [Jason Browlee's](https://machinelearningmastery.com/how-to-develop-a-pix2pix-gan-for-image-to-image-translation/) amazing blog article.
