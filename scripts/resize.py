@@ -1,12 +1,12 @@
 import cv2
 import os
 
-input_dir = "data/splash_arts"
-output_dir = "data/resized_arts"
+input_dir = "data/original_splash_arts"
+output_dir = "data/splash_arts"
 os.makedirs(output_dir, exist_ok=True)
 
 # New size
-target_size = (1536, 832)
+target_size = (1536, 1024)
 
 def resize_image(image_path, save_path):
     image = cv2.imread(image_path)
