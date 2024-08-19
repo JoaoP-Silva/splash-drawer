@@ -6,7 +6,7 @@ output_dir = "data/resized_arts"
 os.makedirs(output_dir, exist_ok=True)
 
 # New size
-target_size = (1500, 800)
+target_size = (1536, 832)
 
 def resize_image(image_path, save_path):
     image = cv2.imread(image_path)
