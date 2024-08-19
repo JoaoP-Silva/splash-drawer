@@ -1,2 +1,8 @@
-zip -r data/splash_arts/images.zip data/splash_arts
-zip -r data/sketches/sketches.zip data/sketches
+ROOT=$(pwd)
+SP_ART=$ROOT/data/splash_arts/
+SKETCHES=$ROOT/data/sketches/
+
+cd $SP_ART
+zip -r images.zip ./*
+cd $SKETCHES
+zip -r sketches.zip ./*
